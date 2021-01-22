@@ -1,0 +1,13 @@
+.experience-number {
+    float: left;
+    font-size: 3em;
+}
+.experience-label{
+    margin-left: 17%;
+    margin-top: 3%;
+    line-height: 1em;
+}
+
+.experience-type{
+    margin-top: 3%;
+}
