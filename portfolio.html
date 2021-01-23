@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./portfolio.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="./portfolio.js"></script>
-    <!-- <link rel="icon" href="https://demo.neontheme.com/assets/images/favicon.ico"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
     <title>Abdul Samea's Portfolio Website</title>
-    <!-- <style>
-        div {
-            border: 1px solid orange;
-        }
-    </style> -->
+   
 </head>
 <body>
     <!-- navigation section for my profile -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light nav-profile">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Abdul Samea</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,13 +24,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#my-journey">My Journey</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#my-recommendations">My Recommendations</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me">Contact Me</a>
               </li>    
             </ul>
           </div>
@@ -50,9 +51,9 @@
       </div>
 
       <!-- Intro section for my website -->
-      <div class="jumbotron introduction">
+      <div class="jumbotron introduction" id="about-me">
           <!-- Intro Section -->
-          <div class="col-md-6">
+          <div class="col-md-6" >
             <div class="container">
               <h1 class="display-4 hello-text">Hello There! I Am</h1>
               <p class="lead my-name">Abdul Samea</p>
@@ -64,7 +65,7 @@
       </div>
 
       <!-- Experience section -->
-      <div class="container">
+      <div class="container experience-section">
           <div class="row about-experience">With experience ranging from diverse industries and varying clients, understanding, analyzing and implementing software solutions is what I do. Turning ideas and requirements into realities, all from a quite corner with a laptop is what i love about my career.</div>
           <div class="row">
               <div class="col-md-6">
@@ -75,9 +76,9 @@
           </div>     
       </div>
 
-      <!-- skills section -->
+      <!-- skills / services section -->
 
-      <div class="container skills-section">
+      <div class="container skills-section" id="services">
         <h1 class="display-4 text-center">Services</h1>
         <div class="row">
           <div class="col-md-6 text-center">
@@ -106,7 +107,7 @@
       </div>
 
       <!-- my journey section -->
-      <div id="container timeline-content">
+      <div id="my-journey" class="container timeline-content">
         <h1 class="text-center">My Journey</h1>
       
         <ul class="timeline">
@@ -132,7 +133,7 @@
       </div>
 
       <!-- Recommendations section -->
-      <div class="container">
+      <div id="my-recommendations" class="container">
         <h1 class="text-center">My Recommendations</h1>
         <i class="fas fa-quote-left"></i><p><a target="_blank" class="recommendation-text" href= "https://www.linkedin.com/in/abdul-samea/">Abdul is talented, hardworking, sincere and a true team player. You can throw to him any technology , any challenge and Abdul would be able to find his way around. He is an asset to a team he works on and you can completely depend on him that he will get things done. Great pleasure to work with you!!<a/></p><cite>Huzefa Madraswala</cite><br/>
         <i class="fas fa-quote-left"></i><p><a target="_blank" class="recommendation-text" href= "https://www.linkedin.com/in/abdul-samea/">I have been working with Abdul since last 9 months and I have been constantly impressed by his attitude towards work and his performance.
@@ -143,7 +144,7 @@
       </div>
 
       <!-- contact me section -->
-      <div class="container contact-me text-center">
+      <div id="contact-me" class="container contact-me text-center">
         <h1>Have an idea? Let's work together.</h1>
         <button type="button" class="btn btn-success"><a class="mail-text" href="mailto:abdulsamea2@gmail.com">Contact me</a></button>
       </div>

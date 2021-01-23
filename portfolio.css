@@ -19,6 +19,14 @@
     background-color: #000;
 }
 
+h1{
+    color: red;
+}
+
+.nav-profile {
+    background-color: #fbefcc;
+}
+
 .linkedin {
     background: #007bb5;
     color: white;
@@ -30,7 +38,11 @@
 }
 
 .introduction {
-    background-color: #BC4639;
+    background-color: #006A4E;
+}
+
+.container{
+    padding-top: 70px !important;
 }
 
 .experience-number {
@@ -48,7 +60,7 @@
 }
 
 body {
-    background: #F3E0DC;
+    background: #ffffff;
     font-size: 16px;
 }
 p {
@@ -78,7 +90,7 @@ p {
   h1 {
     font-family: "Saira", sans-serif;
     letter-spacing: 1.5px;
-    color: white;
+    /* color: white; */
     font-weight: 400;
     font-size: 2.4em;
   }
@@ -157,17 +169,6 @@ p {
   }
   
 
-  blockquote {
-    position: relative;
-    text-align: left;
-    padding: 1.2em 0 2em 38px;
-    border: none;
-    margin: 20px auto 20px;
-    max-width: 800px;
-    width:100%;
-    display: block;
-}
-
 /* blockquote:after {
     content: "";
     display: block;
@@ -219,4 +220,18 @@ blockquote > p > cite {
 
 .mail-text:visited {
     color: grey;
+}
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    background-color: #1B4D3E;
+}
+
+
+.navbar.scrolled {
+    background: #006A4E;
 }
