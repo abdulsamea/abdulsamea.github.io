@@ -1,3 +1,35 @@
+.icon-bar {
+    position: fixed;
+    top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+  
+.github {
+    background: #696969;
+    color: white;
+}
+  
+
 .experience-number {
     float: left;
     font-size: 3em;
@@ -12,16 +44,13 @@
     margin-top: 3%;
 }
 
-/*  */
-  /* Variables */
-  /* Base */
-  body {
+body {
     background: orange;
     font-size: 16px;
-  }
-  p {
+}
+p {
     font-weight: 300;
-  }
+}
   /* a {
     color: #6c6d6d;
     text-decoration: none;
@@ -178,5 +207,13 @@ blockquote > p > cite {
 }
 
 .recommendation-text:visited {
+    color: grey;
+}
+
+.mail-text {
+    text-decoration: none;
+}
+
+.mail-text:visited {
     color: grey;
 }
