@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./portfolio.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="./portfolio.js"></script>
+    <!-- <link rel="icon" href="https://demo.neontheme.com/assets/images/favicon.ico"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <title>Abdul Samea's Portfolio Website</title>
     <style>
@@ -40,30 +42,96 @@
         </div>
       </nav>
 
-        <!-- Intro section for my website -->
-        <div class="jumbotron">
-            <!-- Intro Section -->
-            <div class="col-md-6">
-                <h1 class="display-4 hello-text">Hello There! I Am</h1>
-                <p class="lead my-name">Abdul Samea</p>
-                <p class="lead my-designation">A software Engineer and Cloud Architect</p>
-                <p class="intro text-left">Inspired by 21st century technologies, I am a passionate Software Engineer who likes to implement full-stack solutions. A journey started from Cloud, I love to build cloud based applications that cater to my client's needs.</p>
+      <!-- Intro section for my website -->
+      <div class="jumbotron">
+          <!-- Intro Section -->
+          <div class="col-md-6">
+            <div class="container">
+              <h1 class="display-4 hello-text">Hello There! I Am</h1>
+              <p class="lead my-name">Abdul Samea</p>
+              <p class="lead my-designation">A software Engineer and Cloud Architect</p>
+              <p class="intro text-left">Inspired by 21st century technologies, I am a passionate Software Engineer who likes to implement full-stack solutions. A journey started from Cloud, I love to build cloud based applications that cater to my client's needs.</p>
             </div>
-            <hr class="my-4">       
-        </div>
+          </div>
+        <hr class="my-4">       
+      </div>
 
-        <!-- Experience section -->
-        <div class="container">
-            <div class="row about-experience">With experience ranging from diverse industries and varying clients, understanding, analyzing and implementing software solutions is what I do. Turning ideas and requirements into realities, all from a quite corner with a laptop is what i love about my career.</div>
-            <div class="row">
-                <div class="col-md-6"> 
-                    <p class="experience-number"></p>
-                    <p class="experience-label">Years of</p><p class="experience-label">Experience</p>                     
-                    
-                </div>
-                <div class="col-md-6"> <p class="experience-type">Industry expeirence with clients ranging from Media communication, Electronics, Banking and Railway.</div>
-            </div>
-           
+      <!-- Experience section -->
+      <div class="container">
+          <div class="row about-experience">With experience ranging from diverse industries and varying clients, understanding, analyzing and implementing software solutions is what I do. Turning ideas and requirements into realities, all from a quite corner with a laptop is what i love about my career.</div>
+          <div class="row">
+              <div class="col-md-6">
+                  <p class="experience-number"></p>
+                  <p class="experience-label">Years of</p><p class="experience-label">Experience</p>
+              </div>
+              <div class="col-md-6"> <p class="experience-type">Industry expeirence with clients ranging from Media communication, Electronics, Banking and Railway.</div>
+          </div>     
+      </div>
+
+      <!-- skills section -->
+
+      <div class="container skills-section">
+        <h1 class="display-4 text-center">Services</h1>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <p>Cloud Services</p>
+            <i class="fas fa-cloud fa-5x"></i>
+            <p>Need a server for you new website or a simple serverless solution for your existing application? Or maybe a scalable and robust architecture from networking to web application for your ever increasing user base? I can help you with my cloud proficiency. As a 1x AWS certified Developer and Architect (AWS Certified Solutions Architect – Associate SAA-C02), I take pride in implementing cloud solution and applying best practices in migrating exisitng on premise applications to the cloud.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <p>Backend Specilization</p>
+            <i class="fas fa-server fa-5x"></i>
+            <p>Your backend requirements, optimizations and security compliance are my priority always. I do realize that backend implementation can often be the backbone of your application and implementing it is an adventure for me! With sufficient specilization in NodeJS, PHP and Python I can help you with designing, implementing and distributing complex backend modules and APIs.</p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <p>Database integration</p>
+            <i class="fas fa-database fa-5x"></i>
+            <p>Whether it be a standard SQL requirement or a more modern data reperesentation such as NoSQL, I bring my skills for MySQL, PostgreSQL and MongoDB for handling your complex tasks. Coupled with cloud skills, planning and implementation of database layers is always a great idea for my next project.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <p>Frontend Knowledge</p>
+            <i class="fas fa-photo-video fa-5x"></i> 
+            <p>From using basic building blocks such as HTML, CSS and Vanilla JS all the way upto React with Redux, developing frontend applications has always proven to bring my client's solutions to life in full colors. So let me take your ideas and develop a portal which resonates your requirements.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- my journey section -->
+      <div id="container timeline-content">
+        <h1 class="text-center">My Journey</h1>
+      
+        <ul class="timeline">
+          <li class="event" data-date="September 2018">
+            <p>Started my career as a .NET Developer and trainee at TCS.</p>
+          </li>
+          <li class="event" data-date="January 2019">
+            <p>Worked on NodeJS and Neo4j Database for building recommendation system for client demos.</p>    
+          </li>
+          <li class="event" data-date="April 2019">
+            <p>Worked on IBM mobile First platform and Javascript to develop modules realted to transaction for a telecommunications client.</p>    
+          </li>
+          <li class="event" data-date="July 2019">
+            <p>Worked on Azure serverless cloud services, Ionic with Angular for an electronics and Railway client, enabling them to automate generic requirements such as supply chain management and railway station coordinate mappings.</p>    
+          </li>
+          <li class="event" data-date="November 2019">
+            <p>Worked on Ionic 4 with Angular to help an European banking client to migrate a legacy application based on Apache Cordova.</p>    
+          </li>
+          <li class="event" data-date="March 2020">
+            <p>Started implementing a full-stack solution to convert a monolith application into micro-service based application for a Canadian Banking client which included PHP, NodeJS, Azure for infrastructure and serverless applications.</p>    
+          </li>
+        </ul>
+
+      </div>
+      <!-- Recommendations -->
+      <div class="container">
+        <i class="fas fa-quote-left"></i><p><a target="_blank" class="recommendation-text" href= "https://www.linkedin.com/in/abdul-samea/">Abdul is talented, hardworking, sincere and a true team player. You can throw to him any technology , any challenge and Abdul would be able to find his way around. He is an asset to a team he works on and you can completely depend on him that he will get things done. Great pleasure to work with you!!<a/></p><cite>Huzefa Madraswala</cite><br/>
+        <i class="fas fa-quote-left"></i><p><a target="_blank" class="recommendation-text" href= "https://www.linkedin.com/in/abdul-samea/">I have been working with Abdul since last 9 months and I have been constantly impressed by his attitude towards work and his performance.
+          Very strong when it comes to technology knowledge. Also recently awarded with “Technical Excellence Award” in my team. Yes can work on any language with devops knowledge. Have seen him working on AWS, Drupal,ui,front end , back end, docker, cloud and many more.
+          Complete full stack developer, One man army I would rather say. With great communication skills.Always helped his team members.
+          Most importantly he was always quick to deliver his modules to customer within the given timeframe.</a></p><cite>Shruti Gore</cite><br/>
+        <i class="fas fa-quote-left"></i><p><a target="_blank" class="recommendation-text" href= "https://www.linkedin.com/in/abdul-samea/">Abdul is a great professional to work with. We worked together at TCS and he helped me a lot to get started and also to understand internal processes. I was impressed by his AWS, Javascript and Cloud skills & knowledge. He has the ability to work on multiple tasks and still be focused and deliver quality work. I can easily say he is one of the best in his field. ”He is creative, smart, has excellent communication skills, and is willing to help when you need it. A great colleague!” He is also very responsible and detail-oriented, qualities that make him stand out. His work ethics is immaculate and so easy to work together with. He goes out of his way when you ask for some help and guidance. I wish him the best in all his endeavors.</a></p><cite>Aakash Gupta</cite><br/>
+      </div>
 </body>
 </html>
