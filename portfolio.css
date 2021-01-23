@@ -28,7 +28,10 @@
     background: #696969;
     color: white;
 }
-  
+
+.introduction {
+    background-color: #BC4639;
+}
 
 .experience-number {
     float: left;
@@ -45,7 +48,7 @@
 }
 
 body {
-    background: orange;
+    background: #F3E0DC;
     font-size: 16px;
 }
 p {
