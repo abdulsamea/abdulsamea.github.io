@@ -149,8 +149,8 @@ nav{
 }
 
 .my-pic{
-  width: 50%;
-  height: 60%;
+  width: 210px;
+  height: 225px;
   border-radius: 50%;
   margin: 20px;
   border: 5px solid #ee4c7c;
@@ -358,6 +358,10 @@ h1 {
 
 .recommendation-text:visited {
     color: #e3afbc;
+}
+
+.recommendation-text:hover {
+  color: #e3afbc;
 }
 
 cite{
