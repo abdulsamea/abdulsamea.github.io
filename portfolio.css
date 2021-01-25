@@ -8,6 +8,7 @@
 
 nav{
   padding: 20px;
+  font-size: 20px;
 }
 
 .icon-bar a {
@@ -76,7 +77,7 @@ nav{
 
 .about-experience{
   color:#5d001e;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .experience-number{
@@ -104,6 +105,7 @@ nav{
   background: #f8f6f6;
   margin-top: 40px;
   padding: 24px 24px 32px;
+  border-radius: 10px;
 }
 
 .icon-bar a:hover {
@@ -131,7 +133,15 @@ nav{
 }
 
 .introduction .container{
-  margin-top: 35px;
+  min-width: 100%;
+}
+
+.my-pic{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 20px;
+  border: 5px solid #ee4c7c;
 }
 
 
@@ -151,7 +161,9 @@ nav{
 
 
 .container{
-    padding-top: 50px !important;
+    margin-bottom: 15px;
+    padding-top: 60px !important;
+    margin-bottom: 15px !important;
 }
 
 .experience-number {
@@ -170,7 +182,7 @@ nav{
 
 .experience-type{
   margin-top: 3%;
-  color: #5d001e;
+  color: #9a1750;
   font-size: larger;
 }
 
@@ -181,6 +193,16 @@ nav{
 
 #my-recommendations, #services, #contact-me{
   padding-bottom: 45px;
+}
+
+#services p{
+  font-family: 'Cantora One', sans-serif;
+  color: #696969;
+  margin-top: 0 !important;
+}
+
+.service-highlight {
+  color: #9a1750;
 }
 
 #my-recommendations p{
