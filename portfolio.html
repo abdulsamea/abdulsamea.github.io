@@ -10,6 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="./portfolio.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&display=swap" rel="stylesheet">
     <title>Abdul Samea's Portfolio Website</title>
    
 </head>
@@ -51,23 +55,35 @@
       </div>
 
       <!-- Intro section for my website -->
-      <div class="jumbotron introduction" id="about-me">
+      <div class="jumbotron introduction">
           <!-- Intro Section -->
           <div class="col-md-6" >
             <div class="container">
-              <h1 class="display-4 hello-text">Hello There! I Am</h1>
-              <p class="lead my-name">Abdul Samea</p>
-              <p class="lead my-designation">A software Engineer and Cloud Architect</p>
-              <p class="intro text-left">Inspired by 21st century technologies, I am a passionate Software Engineer who likes to implement full-stack solutions. A journey started from Cloud, I love to build cloud based applications that cater to my client's needs.</p>
+              <h1 class="display-4 pink-text">Hi!</h1>
+              <p class="lead pink-text">I am Abdul Samea</p>
+              <p class="lead pink-text">A software Engineer and Cloud Architect</p>
             </div>
           </div>     
       </div>
 
       <!-- Experience section -->
-      <div class="experience-section">
+      <div class="experience-section" id="about-me">
         <div class="container">
-          <div class="row about-experience">With experience ranging from diverse industries and varying clients, understanding, analyzing and implementing software solutions is what I do. Turning ideas and requirements into realities, all from a quite corner with a laptop is what i love about my career.</div>
+          <h1 class="display-4 text-center pink-text">About Me</h1>
+          <p class="description text-center pink-text">Know a little bit about myself.</p>
+          <hr class="line-pink">
           <div class="row">
+
+            <div class="col-md-6">
+              <img src="./web-dev-img.jfif" alt="web developer working from home from a quite corner!">
+            </div>
+
+            <div class="col-md-6">
+              <p class="about-experience">Inspired by 21st century technologies, I am a passionate Software Engineer who likes to implement full-stack solutions. A journey started from Cloud, I love to build cloud based applications that cater to my client's needs.</p>
+              <p class="about-experience">With experience ranging from diverse industries and varying clients, understanding, analyzing and implementing software solutions is what I do. Turning ideas and requirements into realities, all from a quite corner with a laptop is what i love about my career.</p>
+            </div>
+          </div>
+          <div class="row experience-numerical">
               <div class="col-md-6">
                   <p class="experience-number"></p>
                   <p class="experience-label">Years of</p><p class="experience-label">Experience</p>
@@ -81,39 +97,42 @@
 
       <div class="skills-section" id="services">
         <div class="container">
-        <h1 class="display-4 text-center">Services</h1>
-
-        <div class="row">
-          <div class="col-md-6 text-center">
-            <div class="col-md-12 bg-skills">
-              <p>Cloud Services</p>
-              <i class="fas fa-cloud fa-5x"></i>
-              <p>Need a server for you new website or a simple serverless solution for your existing application? Or maybe a scalable and robust architecture from networking to web application for your ever increasing user base? I can help you with my cloud proficiency. As a 1x AWS certified Developer and Architect (AWS Certified Solutions Architect – Associate SAA-C02), I take pride in implementing cloud solution and applying best practices in migrating exisitng on premise applications to the cloud.</p>
-            </div>
+        <h1 class="display-4 text-center pink-text">Services</h1>
+        <p class="text-center pink-text">Important attributes about my skills.</p>
+       <hr class="line-grey">
+        <div class="row vertical-center">
+          <div class="col-md-4">
+            <img src="cloud-engineer.png" class="rounded float-start skills-image" alt="cloud enginner">
           </div>
-          <div class="col-md-6 text-center">
-            <div class="col-md-12 bg-skills">
-              <p>Backend Specilization</p>
-              <i class="fas fa-server fa-5x"></i>
-              <p>Your backend requirements, optimizations and security compliance are my priority always. I do realize that backend implementation can often be the backbone of your application and implementing it is an adventure for me! With sufficient specilization in NodeJS, PHP and Python I can help you with designing, implementing and distributing complex backend modules and APIs.</p>
-            </div>
+          <div class="col-md-8">
+            <p>Need a server for you new website or a simple serverless solution for your existing application? Or maybe a scalable and robust architecture from networking to web application for your ever increasing user base? I can help you with my cloud proficiency. As a 1x AWS certified Developer and Architect (AWS Certified Solutions Architect – Associate SAA-C02), I take pride in implementing cloud solution and applying best practices in migrating exisitng on premise applications to the cloud.</p>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-6 text-center">
-            <div class="col-md-12 bg-skills">
-              <p>Database integration</p>
-              <i class="fas fa-database fa-5x"></i>
-              <p>Whether it be a standard SQL requirement or a more modern data reperesentation such as NoSQL, I bring my skills for MySQL, PostgreSQL and MongoDB for handling your complex tasks. Coupled with cloud skills, planning and implementation of database layers is always a great idea for my next project.</p>
-            </div>
+        <div class="row vertical-center">
+          <div class="col-md-8">
+            <p>Your backend requirements, optimizations and security compliance are my priority always. I do realize that backend implementation can often be the backbone of your application and implementing it is an adventure for me! With sufficient specilization in NodeJS, PHP and Python I can help you with designing, implementing and distributing complex backend modules and APIs.</p>
           </div>
-          <div class="col-md-6 text-center">
-            <div class="col-md-12 bg-skills">
-              <p>Frontend Knowledge</p>
-              <i class="fas fa-photo-video fa-5x"></i> 
-              <p>From using basic building blocks such as HTML, CSS and Vanilla JS all the way upto React with Redux, developing frontend applications has always proven to bring my client's solutions to life in full colors. So let me take your ideas and develop a portal which resonates your requirements.</p>
-            </div>
+          <div class="col-md-4">
+            <img src="backend-engineer.png" class="rounded float-start skills-image" alt="backend enginner">
+          </div>
+        </div>
+
+        <div class="row vertical-center">
+          <div class="col-md-4">
+            <img src="database-engineer.png" class="rounded float-start skills-image" alt="database enginner">
+          </div>
+          <div class="col-md-8">
+            <p>Whether it be a standard SQL requirement or a more modern data reperesentation such as NoSQL, I bring my skills for MySQL, PostgreSQL and MongoDB for handling your complex tasks. Coupled with cloud skills, planning and implementation of database layers is always a great idea for my next project.</p>
+          </div>
+        </div>
+
+        <div class="row vertical-center">
+          <div class="col-md-8">
+            <p>From using basic building blocks such as HTML, CSS and Vanilla JS all the way upto React with Redux, developing frontend applications has always proven to bring my client's solutions to life in full colors. So let me take your ideas and develop a portal which resonates your requirements.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="frontend-engineer.png" class="rounded float-start skills-image" alt="frontend enginner">
           </div>
         </div>
       </div>
@@ -121,7 +140,9 @@
 
       <!-- my journey section -->
       <div id="my-journey" class="container">
-        <h1 class="text-center">My Journey</h1>
+        <h1 class="text-center pink-text" >My Journey</h1>
+        <p class="description text-center pink-text">Everything that I designed, coded and build belongs to a path full of curious learning!</p>
+        <hr class="line-pink">
         <div class="box">
           <ul id="first-list">
            
@@ -179,8 +200,10 @@
 
       <!-- Recommendations section -->
       <div id="my-recommendations" class="container">
-        <h1 class="text-center">My Recommendations</h1>
-        <i class="fas fa-quote-left"></i><p><a target="_blank" class="recommendation-text" href= "https://www.linkedin.com/in/abdul-samea/">Abdul is talented, hardworking, sincere and a true team player. You can throw to him any technology , any challenge and Abdul would be able to find his way around. He is an asset to a team he works on and you can completely depend on him that he will get things done. Great pleasure to work with you!!<a/></p><cite>Huzefa Madraswala</cite><br/>
+        <h1 class="text-center pink-text">My Recommendations</h1>
+        <p class="description text-center pink-text">What do I like most about my work? When a client or team-mate realizes that I have given back much beyond their expectations.</p>
+        <hr class="line-light-grey">
+        <i class="fas fa-quote-left"></i><p><a target="_blank" class="recommendation-text" href= "https://www.linkedin.com/in/abdul-samea/">Abdul is talented, hardworking, sincere and a true team player. You can throw to him any technology , any challenge and Abdul would be able to find his way around. He is an asset to a team he works on and you can completely depend on him that he will get things done. Great pleasure to work with you!!</a></p><cite>Huzefa Madraswala</cite><br/>
         <i class="fas fa-quote-left"></i><p><a target="_blank" class="recommendation-text" href= "https://www.linkedin.com/in/abdul-samea/">I have been working with Abdul since last 9 months and I have been constantly impressed by his attitude towards work and his performance.
           Very strong when it comes to technology knowledge. Also recently awarded with “Technical Excellence Award” in my team. Yes can work on any language with devops knowledge. Have seen him working on AWS, Drupal,ui,front end , back end, docker, cloud and many more.
           Complete full stack developer, One man army I would rather say. With great communication skills.Always helped his team members.
@@ -190,8 +213,8 @@
 
       <!-- contact me section -->
       <div id="contact-me" class="container contact-me text-center">
-        <h1>Have an idea? Let's work together.</h1>
-        <button type="button" class="btn btn-success"><a class="mail-text" href="mailto:abdulsamea2@gmail.com">Contact me</a></button>
+        <h1 class="pink-text">Have an idea? Let's work together.</h1>
+        <button type="button" class="btn btn-lg btn-block cta"><a class="cta-link mail-text grey-text" href="mailto:abdulsamea2@gmail.com">GET IN TOUCH</a></button>
       </div>
 
 </body>

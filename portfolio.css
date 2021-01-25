@@ -4,8 +4,12 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
-  
+}
+
+nav{
+  padding: 20px;
+}
+
 .icon-bar a {
     display: block;
     text-align: center;
@@ -15,18 +19,121 @@
     font-size: 20px;
 }
 
+.jumbotron {
+  height:420px;
+}
+
+.introduction {
+  background-color: #9a1750;
+  background-repeat: none;
+}
+
+.hello-text{
+  margin-top: 40px;
+}
+
+.hello-text, .my-name, .my-designation {
+  color: #5d001e;
+}
+
+.my-designation{
+  font-weight: 300;
+}
+
+.skills-image{
+  width: 250px;
+  height: 135px;
+  margin-top: 10px;
+}
+
+.line-pink{
+  width: 12%;
+  position: relative;
+  left: 44%;
+  color: #5d001e !important;
+  height: 3px !important;
+}
+
+.line-grey{
+  width: 12%;
+  position: relative;
+  left: 44%;
+  color: #696969 !important;
+  height: 3px !important;
+}
+
+.line-light-grey{
+  width: 12%;
+  position: relative;
+  left: 44%;
+  color: #efefef !important;
+  height: 3px !important;
+}
+
+#about-me p, a {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.about-experience{
+  color:#5d001e;
+  font-size: 22px;
+}
+
+.experience-number{
+  color: #9a1750;
+  font-weight: bold;
+}
+
+.experience-label:nth-of-type(1n){
+  color: #696969;
+  font-size: 24px;
+}
+
+.experience-label:nth-of-type(2n){
+  color: #9a1750;
+  font-size: 26px;
+  margin-top: 18px;
+  line-height: 10px;
+}
+
+.skills-section{
+  background-color: #5d001e;
+}
+
+.skills-section .row{
+  background: #f8f6f6;
+  margin-top: 40px;
+  padding: 24px 24px 32px;
+}
+
 .icon-bar a:hover {
     background-color: #000;
 }
 
-h1{
-    color: red;
+.grey-text{
+    color: #696969;
+    font-family: 'Cantora One', sans-serif;
+}
+
+.pink-text{
+  color: #ee4c7c;
+  font-family: 'Cantora One', sans-serif;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
 }
 
 .introduction{
   padding-top: 1%;
   padding-left: 2%;
 }
+
+.introduction .container{
+  margin-top: 35px;
+}
+
 
 .nav-profile {
     background-color: #fbefcc;
@@ -42,17 +149,9 @@ h1{
     color: white;
 }
 
-.introduction {
-    background-color: #e3e2df;
-    background-repeat: none;
-}
 
 .container{
-    padding-top: 70px !important;
-}
-
-.experience-section .container {
-  padding-top: 10px !important;
+    padding-top: 50px !important;
 }
 
 .experience-number {
@@ -61,8 +160,18 @@ h1{
 }
 .experience-label{
     margin-left: 17%;
-    margin-top: 3%;
+    /* margin-top: 3%; */
     line-height: 1em;
+}
+
+.experience-numerical{
+  margin-top: 15px;
+}
+
+.experience-type{
+  margin-top: 3%;
+  color: #5d001e;
+  font-size: larger;
 }
 
 #my-recommendations{
@@ -70,26 +179,25 @@ h1{
   background-color: #9a1750;
 }
 
+#my-recommendations, #services, #contact-me{
+  padding-bottom: 45px;
+}
+
+#my-recommendations p{
+  font-size: 20px;
+}
+
+
 #my-journey{
-  /* background-color: #64485C; */
   max-width: 100%;
 }
-.skills-section{
-  background-color: #9a1750;
-}
+
 
 .jrny-text{
   color: #006A4E;
 }
 
-.experience-type{
-    margin-top: 3%;
-}
 
-/* body {
-    background: #836778;
-    font-size: 16px;
-} */
 p {
     font-weight: 300;
 }
@@ -103,20 +211,21 @@ p {
 }
 
 .info{
+  font-family: 'Cantora One', sans-serif;
   color: #e3afbf;
 }
   
-  strong {
-    font-weight: 600;
-  }
-  h1 {
-    font-family: "Saira", sans-serif;
-    letter-spacing: 1.5px;
-    /* color: white; */
-    font-weight: 400;
-    font-size: 2.4em;
-  }
+strong {
+  font-weight: 600;
+}
 
+h1 {
+  font-family: "Saira", sans-serif;
+  letter-spacing: 1.5px;
+  /* color: white; */
+  font-weight: 400;
+  font-size: 2.4em;
+}
   
 .box{
   margin:0 10%;
@@ -211,10 +320,17 @@ p {
 
 .recommendation-text {
     text-decoration: none;
+    color: #e3afbc;
 }
 
 .recommendation-text:visited {
-    color: grey;
+    color: #e3afbc;
+}
+
+cite{
+  color: #5d001e;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .mail-text {
@@ -236,4 +352,18 @@ p {
 
 .navbar.scrolled {
     background: #e3e3df;
+}
+
+.cta {
+  padding: 15px 115px 15px 115px;
+  overflow: hidden;
+  background: #9a1750;
+  border-radius: 10px;
+}
+
+.cta-link {
+  text-decoration: none;
+  color: #696969;
+  font-size: 26px;
+  font-weight: 700;
 }
