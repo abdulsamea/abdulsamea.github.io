@@ -1,5 +1,4 @@
-jQuery(document).ready(function () {
-
+window.onload = function() {
     // get my experience
     var now  = new Date();
     var today = moment([now.getUTCFullYear(), now.getUTCMonth() + 1, now.getUTCDate()]);;
@@ -8,20 +7,21 @@ jQuery(document).ready(function () {
     var totalExperienceFormatted = totalExperience.years()  + "." + totalExperience.months();
     document.getElementsByClassName("experience-number")[0].innerHTML = totalExperienceFormatted;
 
-function checkScroll(){
-    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
-
-    if($(window).scrollTop() > startY){
-        $('.navbar').addClass("scrolled");
-    }else{
-        $('.navbar').removeClass("scrolled");
+    function checkScroll(){
+        //The point where the navbar changes in px
+        var navBar = document.getElementsByClassName("navbar")[0];
+        var startY = navBar.offsetHeight * 2;
+        
+        if(document.documentElement.scrollTop > startY){
+            navBar.classList.add("scrolled");
+        }else{
+            navBar.classList.remove("scrolled");
+        }
+    }
+    // change navbar on scroll, load and resize events
+    if(document.getElementsByClassName("navbar").length > 0){
+        window.addEventListener("scroll", checkScroll);
+        window.addEventListener("load", checkScroll);
+        window.addEventListener("resize", checkScroll);
     }
 }
-
-if($('.navbar').length > 0){
-    $(window).on("scroll load resize", function(){
-        checkScroll();
-    });
-}
-
-});
