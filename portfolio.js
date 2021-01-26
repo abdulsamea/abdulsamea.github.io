@@ -1,4 +1,20 @@
 window.onload = function() {
+
+    // function to dynamically add 'highlight' to clicked nav link.
+    var checks = document.querySelectorAll('.nav-link');
+    checks.forEach(function(check){
+    check.addEventListener('click', highlightNav);
+    })
+
+    function highlightNav(event){
+    for (var i = 0; i < document.getElementsByClassName("nav-link").length; i++) {
+        document.getElementsByClassName("nav-link")[i].classList.remove('active-nav-link');
+    }
+    document.getElementsByClassName("nav-link")[Array.from(checks).indexOf(event.target)].classList.add('active-nav-link');
+    }
+
+    window.addEventListener("scroll", checkScroll);
+
     // get my experience
     var now  = new Date();
     var today = moment([now.getUTCFullYear(), now.getUTCMonth() + 1, now.getUTCDate()]);;

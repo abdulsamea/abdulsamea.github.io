@@ -11,6 +11,14 @@ nav{
   font-size: 20px;
 }
 
+
+.active-nav-link{
+   background: #9a1750 !important;
+   color: #e3afbc !important;
+   border-radius: 5px;
+ }
+
+
 .icon-bar a {
     display: block;
     text-align: center;
@@ -207,6 +215,8 @@ nav{
   padding-bottom: 45px;
 }
 
+
+
 #services p{
   font-family: 'Cantora One', sans-serif;
   color: #696969;
@@ -391,6 +401,9 @@ cite{
     background: #e3e3df;
 }
 
+.contact-me{
+  padding-top: 0px !important;
+}
 .cta {
   padding: 15px 115px 15px 115px;
   overflow: hidden;
@@ -405,10 +418,12 @@ cite{
   font-weight: 700;
 }
 
-/* @media(max-width: 575px){
+@media(max-width: 990px){
+  .active-nav-link{
+    padding: 10px !important;
+  }
  
- 
-} */
+}
 
 @media(max-width: 765px){
   
