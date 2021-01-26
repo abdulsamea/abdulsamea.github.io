@@ -424,9 +424,18 @@ cite{
     display: none;
   }
 
+  #services .container {
+    width: 90%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
   .skill-briefing{
     margin-top: 20px;
+    text-align: center;
   }
+
 
 }
 
