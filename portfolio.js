@@ -17,7 +17,7 @@ window.onload = function() {
 
     // get my experience
     var now  = new Date();
-    var today = moment([moment().year(), moment().month(), moment().date()]);;
+    var today = moment([moment().year(), moment().month() , moment().date()]);
     var careerStartDate = moment([2018, 08, 17]);
     var totalExperience = moment.duration(today.diff(careerStartDate));
     var totalExperienceFormatted = totalExperience.years()  + "." + totalExperience.months();

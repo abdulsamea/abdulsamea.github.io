@@ -366,11 +366,11 @@ h1 {
     color: #e3afbc;
 }
 
-.recommendation-text:visited {
+.recommendation-text:visited, .cta-link:visited {
     color: #e3afbc;
 }
 
-.recommendation-text:hover {
+.recommendation-text:hover, .cta-link:hover {
   color: #e3afbc;
 }
 
