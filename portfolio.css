@@ -192,7 +192,6 @@ nav{
 }
 .experience-label{
     margin-left: 17%;
-    /* margin-top: 3%; */
     line-height: 1em;
 }
 
@@ -215,8 +214,6 @@ nav{
   padding-bottom: 45px;
 }
 
-
-
 #services p{
   font-family: 'Cantora One', sans-serif;
   color: #696969;
@@ -225,10 +222,6 @@ nav{
 
 .service-highlight {
   color: #9a1750;
-}
-
-#my-recommendations p{
-  font-size: 20px;
 }
 
 
@@ -243,7 +236,7 @@ nav{
 
 
 p {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .bg-skills {
@@ -450,7 +443,6 @@ cite{
     margin-top: 20px;
     text-align: center;
   }
-
 
 }
 
